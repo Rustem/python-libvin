@@ -38,7 +38,11 @@ class BadVin(Exception):
 class Vin(object):
 
     def __init__(self, vin):
+        if not vin:
+            raise BadVin('Vin is empty')
+        
         self.vin = vin.upper()
+        
         if not self.is_valid():
             raise BadVin('Vin is not valid')
 
