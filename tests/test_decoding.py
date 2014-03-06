@@ -70,4 +70,10 @@ class TestDecode(object):
         for test in TEST_DATA:
             v = Vin(test['VIN'])
             print "Testing: %s" % test['VIN']
-            assert_equals(v.is_valid, True)
+            assert_equals(v.is_valid(), True)
+
+    def test_manufacturer(self):
+        for test in TEST_DATA:
+            v = Vin(test['VIN'])
+            print 'Testing: %s' % test['VIN']
+            assert_true(test['MAKE'] in v.make)

@@ -24,8 +24,4 @@ TEST_DATA = [
      'MODEL': 'Acadia', 'MAKE':  'GMC', 'YEAR': 2008, 'COUNTRY': 'United States',
      'REGION': 'north_america', 'SEQUENTIAL_NUMBER': '123735', 'FEWER_THAN_500_PER_YEAR': False},
 
-    # http://www.vindecoder.net/?vin=2FTCF15F2ECA55516&submit=Decode
-    {'VIN': '2FTCF15F2ECA55516', 'WMI': '2FT', 'VDS': 'CF15F2', 'VIS': 'ECA55516',
-     'MODEL': 'F-150', 'MAKE':  'Ford', 'YEAR': 2014, 'COUNTRY': 'Canada',
-     'REGION': 'north_america', 'SEQUENTIAL_NUMBER': '55516', 'FEWER_THAN_500_PER_YEAR': False},
 ]
